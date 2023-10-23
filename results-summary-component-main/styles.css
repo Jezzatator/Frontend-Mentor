@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'HankenGrotesk';
+  src:url("/assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format('truetype');
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'HankenGrotesk';
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  height: max-content;
+  width: max-content;
+  padding: 0;
+  margin: auto;
+  margin-top: 10%;
+
+
+  text-align: center;
+
+
+  border-radius: 25px;
+  box-shadow: 15px 10px 30px hsla(224, 30%, 27%, 0.2);
+}
+
+.right-top, .left-bottom {
+  justify-content: center;
+  padding: 20px;
+  flex-basis: auto;
+  min-height: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.right-top {
+  order: 1;
+  border-radius: 25px;
+  min-width: 300px;
+  height: 100%;
+
+  background: rgb(120, 87, 255);
+  background: -moz-linear-gradient(180deg, rgba(120, 87, 255, 1) 0%, rgba(46, 43, 233, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(120, 87, 255, 1) 0%, rgba(46, 43, 233, 1) 100%);
+  background: linear-gradient(180deg, rgba(120, 87, 255, 1) 0%, rgba(46, 43, 233, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7857ff", endColorstr="#2e2be9", GradientType=1);
+}
+
+.left-bottom {
+  order: 2;
+  min-width: 250px;
+}
+
+.left-bottom h1, .right-top h1 h2, .circle h3 {
+  font-weight: 700;
+}
+
+.right-top h2, .circle h3 {
+  color: hsl(0, 0%, 100%);
+}
+
+.right-top h1, .right-top p, .right-top article {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+}
+
+.circle h3 {
+  align-items: center;
+  align-self: center;
+  font-size: 48px;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.circle p {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.left-bottom h1 {
+  text-align: justify;
+}
+
+.right-top h1 {
+font-size: 20px;
+}
+
+.circle {
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+
+  text-align: center;
+
+
+  background: rgb(78,33,202);
+background: -moz-linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0.01) 100%);
+background: -webkit-linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0.01) 100%);
+background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0.01) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4e21ca",endColorstr="#2421ca",GradientType=1);
+}
+
+article {
+  margin: auto;
+  width: 250px;
+  text-align: center;
+}
+
+body ul {
+  padding: 0;
+  list-style-type: none;
+}
+.left-bottom p {
+  font-family: HankenGrotesk;
+  margin: 0;
+}
+
+.left-bottom li {
+  flex-shrink: 0;
+  white-space: nowrap;
+  width: 250px;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.left-bottom span {
+  color: hsl(264deg, 6%, 55%);
+}
+
+.left-bottom img {
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.reaction-text {
+  color: hsla(0, 100%, 67%, 1);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.memory-text {
+  color: hsla(39, 100%, 56%, 1);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.verbal-text {
+  color: hsla(166, 100%, 37%, 1);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual-text {
+  color: hsla(234, 85%, 45%, 1);
+}
+
+.verbal-text, .visual-text, .memory-text, .reaction-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-continue {
+  flex-shrink: 0;
+  white-space: nowrap;
+  width: 250px;
+  border-radius: 50px;
+  padding: 15px;
+  margin-top: 10px;
+  margin: auto;
+  align-items: flex-start;
+
+  color: white;
+
+  background: rgb(120, 87, 255);
+  background: -moz-linear-gradient(180deg, rgba(120, 87, 255, 1) 0%, rgba(46, 43, 233, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(120, 87, 255, 1) 0%, rgba(46, 43, 233, 1) 100%);
+  background: linear-gradient(180deg, rgba(120, 87, 255, 1) 0%, rgba(46, 43, 233, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7857ff", endColorstr="#2e2be9", GradientType=1);
+}
